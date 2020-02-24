@@ -13,46 +13,62 @@
   <title>Hello, world!</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand mb-0 h1" href="#">DROWE.DEV</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">LinkedIn</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container pt-2 mx-auto">
-    <div class="row mx-auto align-items-center" style="width: 200px;">
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C4D03AQGCk1XPgAm1ng/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=Vu9PFDYNsnLu4Q5fdbvn2dOHW4FOwCgnLQzCbJqvax8"
-        alt="Daniel Rowe" class="img-thumbnail rounded-circle">
-    </div>
-    <div class="row pt-2"></div>
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<body class="d-flex flex-column h-100">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand mb-0 h1" href="#">DROWE.DEV</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0">
+    <div class="container pt-2 mx-auto">
+      <div class="row mx-auto align-items-center" style="width: 200px;">
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQGCk1XPgAm1ng/profile-displayphoto-shrink_200_200/0?e=1588204800&v=beta&t=Vu9PFDYNsnLu4Q5fdbvn2dOHW4FOwCgnLQzCbJqvax8"
+          alt="Daniel Rowe" class="img-thumbnail rounded-circle">
+      </div>
+      <div class="row pt-2">
+        <div class="jumbotron">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <footer class="footer fixed-bottom bg-light">
+    <div class="container">
+      <span class="text-muted">Sticky Footer</span>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
