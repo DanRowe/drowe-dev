@@ -7,20 +7,10 @@ const ListLink = props => (
   </li>
 )
 
-function TestIcon() {
-    return (
-    <React.Fragment>
-      <circle r={5} cx={5} cy={5}/>
-      <circle r={5} cx={15} cy={5}/>
-      <circle r={5} cx={25} cy={5}/>
-    </React.Fragment>
-    )
-}
-
 TestIcon.size = [30, 10]
 
 export default () => (
-    <div style={{border: `1px solid black`, height: `2.2em`}}>
+    <div style={{border: `1px solid black`, height: `2.2rem`}}>
         <ul style={{ textAlign: `center`, paddingTop: `.1em` }}>
             <ListLink href="mailto:daniel@drowe.dev">
                 <FaEnvelope size="1.7em"/>
