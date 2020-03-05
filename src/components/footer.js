@@ -7,7 +7,6 @@ const ListLink = props => (
   </li>
 )
 
-TestIcon.size = [30, 10]
 
 export default () => (
     <div style={{border: `1px solid black`, height: `2.2rem`}}>
