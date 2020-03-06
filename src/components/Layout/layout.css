@@ -631,4 +631,5 @@ pre tt:after {
   margin-bottom: 0px;
   overflow: hidden;
   white-space: nowrap;
+  height: 100%;
 }

@@ -8,15 +8,14 @@
 import React from "react"
 
 import "./layout.css"
-import Footer from "./footer"
-import Navbar from "./Navbar/navbar"
+import Footer from "../Footer/footer"
+import Nav from "../Nav/nav"
 
 export default ({children}) => (
   <>
-    {/* <div style={{maxHeight: `100vh`}}> */}
-      <Navbar />
-      {children}
+      <Nav>
+        {children}
+      </Nav>
       <Footer />
-    {/* </div> */}
   </>
 )

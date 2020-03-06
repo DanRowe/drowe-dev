@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavColumn = styled.div `
-height: 96%;
+height: 100%;
 // max-width: 2.2em;
 width: 3.5em;
 border: 1px solid black;
