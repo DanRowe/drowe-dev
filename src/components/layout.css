@@ -626,3 +626,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.footer {
+  margin-bottom: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
