@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"
-
+import { Wrapper, Flex } from "./styles"
 
 const ListLink = props => (
     <li style={{ display: `inline-block`, marginRight: `1rem`, marginBottom: `0px`}}>
@@ -10,7 +10,7 @@ const ListLink = props => (
 
 
 export default () => (
-    <div class= "footer" style={{border: `1px solid black`, height: `2.2rem`, width: `100%`, bottom: `0`, position: `absolute`}}>
+    <Wrapper>
         <ul style={{ textAlign: `center`, paddingTop: `.1em`, paddingBottom: `0`, marginBottom: `0`}}>
             <ListLink href="mailto:daniel@drowe.dev">
                 <FaEnvelope size="1.7em"/>
@@ -22,5 +22,5 @@ export default () => (
                 <FaGithub size="1.9em"/>
             </ListLink>
         </ul>
-    </div>
+    </Wrapper>
 )
