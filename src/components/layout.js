@@ -7,14 +7,16 @@
 
 import React from "react"
 
-import Footer from "./footer"
 import "./layout.css"
+import Footer from "./footer"
+import Navbar from "./Navbar/navbar"
 
-// const Layout = () => (
-//   <Footer />
-// )
-// export default Layout
-
-export default () => (
-  <Footer />
+export default ({children}) => (
+  <>
+    {/* <div style={{maxHeight: `100vh`}}> */}
+      <Navbar />
+      {children}
+      <Footer />
+    {/* </div> */}
+  </>
 )
