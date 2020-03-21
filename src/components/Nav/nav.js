@@ -1,26 +1,19 @@
 import React from "react"
 import Navbar from "./Navbar/navbar"
 import styled from 'styled-components';
-
-const Container = styled.div`
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 90%;
-  @media (min-width: 601px) {
-    width: 90%;
-  }
-  @media (min-width: 993px) {
-    width: 80%;
-  }
-`;
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 export default({children}) => (
-    <>
+    <Container>
+      <Row>
         {/* active */}
-        <Navbar />
-        <Container>
-            { children }
-        </Container>
+        <Col className="ml-0"><Navbar /></Col>
+        {/* page content */}
+        <Col>{ children }</Col>
         {/* inactive */}
-    </>
+        <Col className="d-none d-md-block"><Navbar /></Col>
+      </Row>
+    </Container>
 )
