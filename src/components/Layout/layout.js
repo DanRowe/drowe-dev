@@ -7,15 +7,22 @@
 
 import React from "react"
 
-import "./layout.css"
+// import "./layout.css"
 import Footer from "../Footer/footer"
 import Nav from "../Nav/nav"
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+
 
 export default ({children}) => (
-  <>
+  <Container fluid>
+    <Row>
       <Nav>
         {children}
       </Nav>
+    </Row>
+    <Row className="fixed-bottom">
       <Footer />
-  </>
+    </Row>
+  </Container>
 )
