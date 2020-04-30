@@ -4,17 +4,35 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { NavColumn } from './nav-column'
+import { StaticQuery, graphql } from "gatsby";
 
 export default({children}) => (
-    <Container fluid className="no-gutters">
+  <StaticQuery
+    query={graphql`
+      query SiteQuery {
+        site {
+          siteMetadata {
+            title
+            menuLinks {
+              name
+              link
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Container fluid className="no-gutters">
       <Row>
-        {/* active */}
-        <Col className="p-0">
-          <NavColumn>Home</NavColumn>
+        {/* active page and before */}
+        <Col className="p-0 d-inline-flex">
+          {data.site.siteMetadata.menuLinks.map(link => (
+            <NavColumn>{link.name}</NavColumn>
+          ))}
         </Col>
         {/* page content */}
         <Col xs={10} className="p-0">{ children }</Col>
-        {/* inactive */}
+        {/* page after active and beyond */}
         <Col className="p-0 d-none d-md-block">
           <Container className="no-gutters">
             <Row>
@@ -27,4 +45,6 @@ export default({children}) => (
         </Col>
       </Row>
     </Container>
+    )}
+  />
 )

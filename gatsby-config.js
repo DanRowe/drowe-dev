@@ -3,6 +3,16 @@ module.exports = {
     title: `Daniel Rowe's Portfolio`,
     description: `Daniel Rowe's personal website to showcase his software engineering skills.`,
     author: `@drowe`,
+    menuLinks:[
+      {
+        name: 'Home',
+        link: '/'
+      },
+      {
+        name: 'About',
+        link: '/about'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -39,8 +49,8 @@ module.exports = {
       //TODO change metadata
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Daniel-Rowe-Portfolio`,
+        short_name: `DRowe`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
