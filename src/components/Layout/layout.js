@@ -14,10 +14,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
 
-export default ({children}) => (
+export default ({children, page}) => (
   <Container fluid>
     <Row>
-      <Nav>
+      <Nav page={page}>
         {children}
       </Nav>
     </Row>

@@ -8,7 +8,7 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout page="home">
     <SEO title="Home" />
     <Container fluid>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus commodo nulla a dignissim. Ut posuere malesuada arcu convallis elementum. Donec eget ullamcorper justo. Pellentesque eget tortor sed nisi luctus mattis. Vestibulum ornare enim mi, eget tristique odio interdum in. Nulla et enim eu eros consectetur faucibus. Aliquam ornare porta libero, sit amet lobortis erat tincidunt eget. Quisque mattis mi laoreet justo ultricies malesuada. Ut pellentesque velit lacus. Vivamus auctor vitae dui quis varius. Praesent malesuada porta magna, vel ullamcorper nunc dignissim at. Ut viverra nunc at sodales sagittis.

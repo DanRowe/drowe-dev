@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 import { NavColumn } from './nav-column'
 import { StaticQuery, graphql, Link } from "gatsby";
 
-export default({children}) => (
+export default({children, page}) => (
   <StaticQuery
     query={graphql`
       query SiteQuery {
@@ -38,7 +38,7 @@ export default({children}) => (
             <Row>
               <Col></Col>
               <Col xs={7}>
-                <NavColumn>About</NavColumn>
+                <NavColumn>{page}</NavColumn>
               </Col>
             </Row>
           </Container>
