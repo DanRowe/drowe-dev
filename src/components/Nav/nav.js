@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { NavColumn } from './nav-column'
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 
 export default({children}) => (
   <StaticQuery
@@ -27,7 +27,7 @@ export default({children}) => (
         {/* active page and before */}
         <Col className="p-0 d-inline-flex">
           {data.site.siteMetadata.menuLinks.map(link => (
-            <NavColumn>{link.name}</NavColumn>
+            <Link to={link.link}><NavColumn>{link.name}</NavColumn></Link>
           ))}
         </Col>
         {/* page content */}
