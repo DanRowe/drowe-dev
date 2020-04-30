@@ -6,16 +6,16 @@ import Col from 'react-bootstrap/Col'
 import { NavColumn } from './nav-column'
 
 export default({children}) => (
-    <Container className="no-gutters">
-      <Row className="no-gutters">
+    <Container fluid className="no-gutters">
+      <Row>
         {/* active */}
-        <Col>
+        <Col className="p-0">
           <NavColumn>Home</NavColumn>
         </Col>
         {/* page content */}
-        <Col xs={10}>{ children }</Col>
+        <Col xs={10} className="p-0">{ children }</Col>
         {/* inactive */}
-        <Col>
+        <Col className="p-0">
           <NavColumn>About</NavColumn>
         </Col>
       </Row>
