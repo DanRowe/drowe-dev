@@ -9,11 +9,11 @@ export default({children}) => (
     <Container>
       <Row>
         {/* active */}
-        <Col className="ml-0"><Navbar /></Col>
+        <Col className="ml-0"><Navbar Link={'Home'}/></Col>
         {/* page content */}
         <Col>{ children }</Col>
         {/* inactive */}
-        <Col className="d-none d-md-block"><Navbar /></Col>
+        <Col className="d-none d-md-block"><Navbar Link={'About'}/></Col>
       </Row>
     </Container>
 )
