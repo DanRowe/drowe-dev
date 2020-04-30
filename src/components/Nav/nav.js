@@ -15,8 +15,15 @@ export default({children}) => (
         {/* page content */}
         <Col xs={10} className="p-0">{ children }</Col>
         {/* inactive */}
-        <Col className="p-0">
-          <NavColumn>About</NavColumn>
+        <Col className="p-0 d-none d-md-block">
+          <Container className="no-gutters">
+            <Row>
+              <Col></Col>
+              <Col xs={7}>
+                <NavColumn>About</NavColumn>
+              </Col>
+            </Row>
+          </Container>
         </Col>
       </Row>
     </Container>
