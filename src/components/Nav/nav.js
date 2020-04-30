@@ -1,19 +1,23 @@
 import React from "react"
-import Navbar from "./Navbar/navbar"
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { NavColumn } from './nav-column'
 
 export default({children}) => (
-    <Container>
-      <Row>
+    <Container className="no-gutters">
+      <Row className="no-gutters">
         {/* active */}
-        <Col className="ml-0"><Navbar Link={'Home'}/></Col>
+        <Col>
+          <NavColumn>Home</NavColumn>
+        </Col>
         {/* page content */}
-        <Col>{ children }</Col>
+        <Col xs={10}>{ children }</Col>
         {/* inactive */}
-        <Col className="d-none d-md-block"><Navbar Link={'About'}/></Col>
+        <Col>
+          <NavColumn>About</NavColumn>
+        </Col>
       </Row>
     </Container>
 )
