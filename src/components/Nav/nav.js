@@ -31,7 +31,7 @@ export default({children, page}) => (
         </Col>
         {/* page content */}
         <Col xs={10} className="p-0">{ children }</Col>
-        {/* page after active and beyond */}
+        {/* pages after active*/}
         <Col className="p-0 d-none d-lg-block">
           <Container className="no-gutters">
             <Row>
