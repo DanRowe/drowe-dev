@@ -12,7 +12,6 @@ export default({children, page}) => (
       query SiteQuery {
         site {
           siteMetadata {
-            title
             menuLinks {
               name
               link
@@ -27,19 +26,19 @@ export default({children, page}) => (
         {/* active page and before */}
         <Col className="p-0 d-inline-flex">
         {data.site.siteMetadata.menuLinks.slice(0,data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1).map(link => (
-                <Link to={link.link}><NavColumn>{link.name}</NavColumn></Link>
+                <Link to={link.link} style={{textDecoration: 'none', color: 'black'}}><NavColumn>{link.name}</NavColumn></Link>
               ))}
         </Col>
         {/* page content */}
         <Col xs={10} className="p-0">{ children }</Col>
         {/* page after active and beyond */}
-        <Col className="p-0 d-none d-md-block">
+        <Col className="p-0 d-none d-lg-block">
           <Container className="no-gutters">
             <Row>
               <Col></Col>
               <Col xs={7} className="p-0 d-inline-flex">
               {data.site.siteMetadata.menuLinks.slice(data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,).map(link => (
-                <Link to={link.link}><NavColumn>{link.name}</NavColumn></Link>
+                <Link to={link.link} style={{textDecoration: 'none', color: 'black'}}><NavColumn>{link.name}</NavColumn></Link>
               ))}
               </Col>
             </Row>
