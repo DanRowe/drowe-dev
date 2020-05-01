@@ -15,7 +15,7 @@ export default () => (
             <ListLink href="mailto:daniel@drowe.dev">
                 <FaEnvelope size="1.7em"/>
             </ListLink>
-            <ListLink href="https://linkedin/in/danielrowe2">
+            <ListLink href="https://linkedin.com/in/danielrowe2">
                 <FaLinkedinIn size="1.7em"/>
             </ListLink>
             <ListLink href="https://github.com/DanRowe1/">
