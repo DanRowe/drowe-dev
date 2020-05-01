@@ -13,9 +13,9 @@ import Image from "../components/image"
 const IndexPage = () => (
   <Layout page="Home">
     <SEO title="Home" />
-    <Container fluid className="h-100">
-      <Row className="h-100">
-        <Col className="h-100"><Container fluid className="text-center h-100"><Image></Image></Container></Col>
+    <Container fluid style={{maxWidth: 1300}}>
+      <Row>
+        <Col><Container fluid><Image></Image></Container></Col>
         <Col>
           <h1>Hi I'm Daniel!</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur eleifend luctus. Vestibulum a felis pellentesque, aliquet mi ac, cursus enim. Nam aliquet erat quis hendrerit posuere. Cras id laoreet eros. Quisque nibh orci, dapibus sed vehicula at, volutpat nec leo. Curabitur blandit tincidunt tincidunt. Phasellus eget diam at ipsum mollis laoreet non vitae diam. Sed auctor, mi commodo malesuada mattis, metus arcu consectetur ante, sit amet fermentum urna metus eu dui. Donec consectetur ex id enim dignissim euismod. Ut vehicula mollis porta.
