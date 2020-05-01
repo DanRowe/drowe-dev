@@ -26,9 +26,9 @@ export default({children, page}) => (
       <Row>
         {/* active page and before */}
         <Col className="p-0 d-inline-flex">
-          {data.site.siteMetadata.menuLinks.map(link => (
-            <Link to={link.link}><NavColumn>{link.name}</NavColumn></Link>
-          ))}
+        {data.site.siteMetadata.menuLinks.slice(0,data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1).map(link => (
+                <Link to={link.link}><NavColumn>{link.name}</NavColumn></Link>
+              ))}
         </Col>
         {/* page content */}
         <Col xs={10} className="p-0">{ children }</Col>
@@ -37,8 +37,10 @@ export default({children, page}) => (
           <Container className="no-gutters">
             <Row>
               <Col></Col>
-              <Col xs={7}>
-                <NavColumn>{page}</NavColumn>
+              <Col xs={7} className="p-0 d-inline-flex">
+              {data.site.siteMetadata.menuLinks.slice(data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,).map(link => (
+                <Link to={link.link}><NavColumn>{link.name}</NavColumn></Link>
+              ))}
               </Col>
             </Row>
           </Container>
