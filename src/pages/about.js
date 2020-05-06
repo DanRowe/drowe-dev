@@ -8,8 +8,8 @@ import SEO from "../components/seo"
 const AboutPage = () => (
   <Layout page="About">
     <SEO title="About" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <h1>Hi from the About page</h1>
+    <p>Read about me</p>
   </Layout>
 )
 
