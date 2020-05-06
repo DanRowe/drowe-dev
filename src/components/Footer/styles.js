@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   width: 100%;
   bottom: 0;
   position: absolute;
+  z-index: 1;
 `;
 
 export const Flex = styled.div`
