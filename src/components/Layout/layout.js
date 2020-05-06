@@ -38,12 +38,16 @@ export default ({children, page}) => (
     `}
     render={data => (
       <Container fluid>
+        {/* TODO col size needs to adjust depending on the size of the page array */}
         <Row>
           <Col className="p-0 d-inline-flex">
           <div className="position-absolute d-flex">
             <Nav 
-              page={data.site.siteMetadata.menuLinks.slice(0,data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1)}
-              r="auto"
+              page={
+                data.site.siteMetadata.menuLinks.slice(
+                  0,
+                  data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1
+                )}
             />
           </div>
           </Col>
@@ -53,7 +57,10 @@ export default ({children, page}) => (
           <Col className="p-0 d-none d-lg-block">
             <div className="position-absolute d-flex" style={{right: 0}}>
             <Nav 
-              page={data.site.siteMetadata.menuLinks.slice(data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,)}
+              page={
+                data.site.siteMetadata.menuLinks.slice(
+                  data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,
+                )}
               />
             </div>
           </Col>
