@@ -51,7 +51,7 @@ export default ({children, page}) => (
             <ContentContainer>{children}</ContentContainer>
           </Col>
           <Col className="p-0 d-none d-lg-block">
-            <div className="position-absolute" style={{right: 0}}>
+            <div className="position-absolute d-flex" style={{right: 0}}>
             <Nav 
               page={data.site.siteMetadata.menuLinks.slice(data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,)}
               />
