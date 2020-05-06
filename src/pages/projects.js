@@ -4,7 +4,7 @@ import React from "react"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 
-const ProjectPage = () => (
+const ProjectsPage = () => (
   <Layout page="Projects">
     <SEO title="Projects" />
     <h1>Hi from the Projects page</h1>
@@ -12,4 +12,4 @@ const ProjectPage = () => (
   </Layout>
 )
 
-export default ProjectPage
+export default ProjectsPage
