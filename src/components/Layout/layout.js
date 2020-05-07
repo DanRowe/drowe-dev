@@ -49,9 +49,11 @@ export default ({children, page}) => (
             <Navbar.Brand href="#home">Drowe.dev</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto justify-content-end">
+              <Nav justify className="mr-auto justify-content-end">
               {data.site.siteMetadata.menuLinks.map(link => (
                 <Nav.Item>
+                  {/* TODO remove home */}
+                  {/* TODO add social links */}
                   <Link 
                     to={link.link} 
                     style={{textDecoration: 'none', color: 'black'}}
@@ -82,7 +84,7 @@ export default ({children, page}) => (
               />
             </div>
           </Col>
-          <Col className="p-0">
+          <Col>
             <ContentContainer>{children}</ContentContainer>
           </Col>
           <Col 
@@ -101,6 +103,7 @@ export default ({children, page}) => (
             </div>
           </Col>
         </Row>
+        {/* TODO make page content respect the space of footer */}
         <Row className="fixed-bottom d-none d-md-block">
           <Footer />
         </Row>
