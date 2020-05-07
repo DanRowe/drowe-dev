@@ -13,8 +13,8 @@ import Image from "../components/image"
 const IndexPage = () => (
   <Layout page="Home">
     <SEO title="Home" />
-    <Container fluid style={{maxWidth: 1300}}>
-      <Row>
+    <Container fluid>
+      <Row xs="1" sm="1" md="2" className="m-2">
         <Col><Container fluid><Image></Image></Container></Col>
         <Col>
           <h1>Hi I'm Daniel!</h1>
