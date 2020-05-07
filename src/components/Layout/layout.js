@@ -16,6 +16,10 @@ import { StaticQuery, graphql } from "gatsby";
 import Row from 'react-bootstrap/Row'
 import styled from 'styled-components'
 
+const SideMenu = styled.nav`
+`
+
+
 const ContentContainer = styled.div`
   max-width: 1300px;
   padding: 1rem;
@@ -38,13 +42,17 @@ export default ({children, page}) => (
     `}
     render={data => (
       <Container fluid>
+        {/* Mobile navigation */}
+        <SideMenu className="p-0 d-lg-none">
+          <p>SideMenu</p>
+        </SideMenu> 
         <Row>
           <Col 
             xs={Math.round(data.site.siteMetadata.menuLinks.slice(
               0,
               data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1
             ).length/2)}
-            className="p-0 d-inline-flex"
+            className="p-0 d-none d-lg-block"
           >
             <div className="position-absolute d-flex">
               <Nav 
@@ -75,7 +83,7 @@ export default ({children, page}) => (
             </div>
           </Col>
         </Row>
-        <Row className="fixed-bottom">
+        <Row className="fixed-bottom d-none d-md-block">
           <Footer />
         </Row>
       </Container>
