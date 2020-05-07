@@ -9,15 +9,16 @@ import React from "react"
 
 // import "./layout.css"
 import Footer from "../Footer/footer"
-import Nav from "../Nav/nav"
+import MyNav from "../Nav/nav"
+
 import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
-import { StaticQuery, graphql } from "gatsby";
+import Navbar from 'react-bootstrap/Navbar'
 import Row from 'react-bootstrap/Row'
-import styled from 'styled-components'
+import Nav from 'react-bootstrap/Nav'
 
-const SideMenu = styled.nav`
-`
+import { StaticQuery, graphql, Link } from "gatsby";
+import styled from 'styled-components'
 
 
 const ContentContainer = styled.div`
@@ -43,9 +44,26 @@ export default ({children, page}) => (
     render={data => (
       <Container fluid>
         {/* Mobile navigation */}
-        <SideMenu className="p-0 d-lg-none">
-          <p>SideMenu</p>
-        </SideMenu> 
+        <Container className="d-lg-none" style={{padding: 30}}>
+          <Navbar collapseOnSelect fixed="top" bg="light" expand="lg">
+            <Navbar.Brand href="#home">Drowe.dev</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto justify-content-end">
+              {data.site.siteMetadata.menuLinks.map(link => (
+                <Nav.Item>
+                  <Link 
+                    to={link.link} 
+                    style={{textDecoration: 'none', color: 'black'}}
+                    >
+                    {link.name}
+                  </Link>
+                </Nav.Item>
+              ))}
+              </Nav>
+            </Navbar.Collapse>
+          </Navbar> 
+        </Container>
         <Row>
           <Col 
             xs={Math.round(data.site.siteMetadata.menuLinks.slice(
@@ -55,7 +73,7 @@ export default ({children, page}) => (
             className="p-0 d-none d-lg-block"
           >
             <div className="position-absolute d-flex">
-              <Nav 
+              <MyNav 
                 page={
                   data.site.siteMetadata.menuLinks.slice(
                     0,
@@ -74,7 +92,7 @@ export default ({children, page}) => (
             className="p-0 d-none d-lg-block"
           >
             <div className="position-absolute d-flex" style={{right: 0}}>
-            <Nav 
+            <MyNav 
               page={
                 data.site.siteMetadata.menuLinks.slice(
                   data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,
