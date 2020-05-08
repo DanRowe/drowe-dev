@@ -30,7 +30,7 @@ const Headshot = () => {
       fluid={data.headshotImage.childImageSharp.fluid} 
       fadeIn 
       alt="Daniel Rowe Headshot"
-      style={{maxHeight: "100%"}}
+      style={{maxHeight: "100%", position: "static"}}
     />
 }
 
