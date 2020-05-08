@@ -49,17 +49,19 @@ export default ({children, page}) => (
             <Navbar.Brand href="#home">Drowe.dev</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav justify className="mr-auto justify-content-end">
+              <Nav activeKey="/home" justify>
               {data.site.siteMetadata.menuLinks.map(link => (
                 <Nav.Item>
-                  {/* TODO remove home */}
                   {/* TODO add social links */}
-                  <Link 
-                    to={link.link} 
-                    style={{textDecoration: 'none', color: 'black'}}
-                    >
-                    {link.name}
-                  </Link>
+                  <Nav.Link >
+                    <Link 
+                      to={link.link} 
+                      style={{textDecoration: 'none', color: 'black'}}
+                      activeStyle={{fontWeight: "bold"}}
+                      >
+                      {link.name}
+                    </Link>
+                  </Nav.Link>
                 </Nav.Item>
               ))}
               </Nav>
