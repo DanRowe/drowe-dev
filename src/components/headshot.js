@@ -26,7 +26,11 @@ const Headshot = () => {
     }
   `)
 
-  return <Img fadeIn fluid={data.headshotImage.childImageSharp.fluid} />
+  return <Img 
+      fluid={data.headshotImage.childImageSharp.fluid} 
+      fadeIn 
+      alt="Daniel Rowe Headshot"
+    />
 }
 
 export default Headshot
