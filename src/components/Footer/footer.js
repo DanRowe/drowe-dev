@@ -10,7 +10,7 @@ const ListLink = props => (
 
 
 export default () => (
-    <Wrapper>
+    <Wrapper className="bg-light">
         <ul style={{ textAlign: `center`, paddingTop: `.1em`, paddingBottom: `0`, marginBottom: `0`}}>
             <ListLink href="mailto:daniel@drowe.dev">
                 <FaEnvelope size="1.7em"/>
