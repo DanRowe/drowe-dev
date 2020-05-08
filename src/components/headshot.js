@@ -13,7 +13,7 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Headshot = () => {
   const data = useStaticQuery(graphql`
     query {
       headshotImage: file(relativePath: { eq: "headshot.JPG" }) {
@@ -29,4 +29,4 @@ const Image = () => {
   return <Img fadeIn fluid={data.headshotImage.childImageSharp.fluid} />
 }
 
-export default Image
+export default Headshot
