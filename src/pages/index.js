@@ -15,8 +15,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Container fluid>
       <Row xs="1" sm="1" md="2" className="m-2">
-        {/* TODO cropped mobile image */}
-        <Col style={{maxHeight: "91vh"}}><Headshot></Headshot></Col>
+        {/* FIXME keep image centered */}
+        {/* FIXME mobile image cropping on ipad/iphone view */}
+        <Col className="d-none d-md-block" style={{maxHeight: "91vh"}}><Headshot></Headshot></Col>
+        <Col className="d-md-none" style={{maxHeight: "60vh"}}><Headshot></Headshot></Col>
         <Col>
           <h1>Hi I'm Daniel!</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur eleifend luctus. Vestibulum a felis pellentesque, aliquet mi ac, cursus enim. Nam aliquet erat quis hendrerit posuere. Cras id laoreet eros. Quisque nibh orci, dapibus sed vehicula at, volutpat nec leo. Curabitur blandit tincidunt tincidunt. Phasellus eget diam at ipsum mollis laoreet non vitae diam. Sed auctor, mi commodo malesuada mattis, metus arcu consectetur ante, sit amet fermentum urna metus eu dui. Donec consectetur ex id enim dignissim euismod. Ut vehicula mollis porta.
