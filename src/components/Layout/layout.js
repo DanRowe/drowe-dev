@@ -46,10 +46,10 @@ export default ({children, page}) => (
         {/* Mobile navigation */}
         <Container className="d-lg-none" style={{padding: 30}}>
           <Navbar collapseOnSelect fixed="top" bg="light" expand="lg">
-            <Navbar.Brand href="#home">Drowe.dev</Navbar.Brand>
+            <Link to="/"><Navbar.Brand>Drowe.dev</Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav activeKey="/home" justify>
+              <Nav justify>
               {data.site.siteMetadata.menuLinks.map(link => (
                 <Nav.Item>
                   {/* TODO add social links */}
