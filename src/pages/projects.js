@@ -3,12 +3,12 @@ import React from "react"
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
+import Development from "./development"
 
 const ProjectsPage = () => (
   <Layout page="Projects">
     <SEO title="Projects" />
-    <h1>Hi from the Projects page</h1>
-    <p>Learn about my projects</p>
+    <Development />
   </Layout>
 )
 
