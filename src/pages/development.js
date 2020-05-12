@@ -1,46 +1,42 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import {Row, Col} from "react-bootstrap"
-import styled from 'styled-components'
+import {Row, Col, Container} from "react-bootstrap"
 
-const myRow = styled.div`
-    font-family: sans-serif;
-    background-color: black;
-`
 
 const DevelopmentPage = () => (
-    <myRow>
+    <Container>
         <SEO title="Under Construction" />
-        <Row>
+        <Row xs="1" className="d-flex align-items-center" style={{height: "80vh"}}>
             <Col>
                 <div>
                     <h1 className="d-none d-sm-block">Nice to meet you</h1>
                     <h2 className="d-sm-none">Nice to meet you</h2>
                     <p>More amazing and exciting content to come.</p>
                     <p>For now, take a look at my LinkedIn profile.</p>
-            </Col>
-            <Col>
-                <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-                <div 
-                    class="LI-profile-badge"  
-                    data-version="v1" 
-                    data-size="large" 
-                    data-locale="en_US" 
-                    data-type="horizontal" 
-                    data-theme="light" 
-                    data-vanity="danielrowe2"
-                >
-                    <a 
-                        class="LI-simple-link" 
-                        href='https://www.linkedin.com/in/danielrowe2?trk=profile-badge'
-                    >
-                        Daniel Rowe's LinkedIn Profile
-                    </a>
+                </div>
+                <div>
+                    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+                    <div 
+                        class="LI-profile-badge"  
+                        data-version="v1" 
+                        data-size="large" 
+                        data-locale="en_US" 
+                        data-type="horizontal" 
+                        data-theme="light" 
+                        data-vanity="danielrowe2"
+                        >
+                        <a 
+                            class="LI-simple-link" 
+                            href='https://www.linkedin.com/in/danielrowe2?trk=profile-badge'
+                            >
+                            Daniel Rowe's LinkedIn Profile
+                        </a>
+                    </div>
                 </div>
             </Col>
         </Row>
-    </myRow>
+    </Container>
 )
 
 export default DevelopmentPage
