@@ -2,11 +2,11 @@ import React from "react"
 // TODO customize bootstrap to match what was used --> https://getbootstrap.com/docs/4.3/getting-started/theming/
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Headshot from "../components/headshot"
 
 const IndexPage = () => (
