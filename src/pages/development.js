@@ -14,9 +14,11 @@ const DevelopmentPage = () => (
         <SEO title="Under Construction" />
         <Row>
             <Col>
-                <h1>Nice to meet you</h1>
-                <p>More amazing and exciting content to come.</p>
-                <p>For now, take a look at my LinkedIn profile.</p>
+                <div>
+                    <h1 className="d-none d-sm-block">Nice to meet you</h1>
+                    <h2 className="d-sm-none">Nice to meet you</h2>
+                    <p>More amazing and exciting content to come.</p>
+                    <p>For now, take a look at my LinkedIn profile.</p>
             </Col>
             <Col>
                 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
