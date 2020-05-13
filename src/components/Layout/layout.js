@@ -25,6 +25,16 @@ const ContentContainer = styled.div`
   max-width: 1300px;
   padding: 1rem;
   margin: auto;
+  height: calc(100vh - 2.2rem);
+  // text-align: center;
+  // display: flex;
+  // flex: 1;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 export default ({children, page}) => (
@@ -42,6 +52,7 @@ export default ({children, page}) => (
       }
     `}
     render={data => (
+      <>
       <Container fluid>
         {/* Mobile navigation */}
         <Container className="d-lg-none" style={{padding: 30}}>
@@ -105,11 +116,11 @@ export default ({children, page}) => (
             </div>
           </Col>
         </Row>
-        {/* TODO make page content respect the space of footer */}
-        <Row className="fixed-bottom d-none d-md-block">
-          <Footer />
-        </Row>
       </Container>
+        <div className="fixed-bottom d-none d-md-block">
+          <Footer />
+        </div>
+      </>
     )}
     />
 )
