@@ -5,7 +5,11 @@ import { Link } from "gatsby";
 export default({ page }) => (
   <>
     {page.map(link => (
-            <Link to={link.link} style={{textDecoration: 'none', color: 'black'}}><NavColumn>{link.name}</NavColumn></Link>
+            <Link 
+              to={link.link} 
+              style={{textDecoration: 'none', color: 'black'}}
+              key={link.name}
+            ><NavColumn>{link.name}</NavColumn></Link>
     ))}
   </>
 )

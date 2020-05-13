@@ -62,7 +62,7 @@ export default ({children, page}) => (
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav justify>
               {data.site.siteMetadata.menuLinks.map(link => (
-                <Nav.Item>
+                <Nav.Item key={link.name}>
                   {/* TODO add social links */}
                   <Nav.Link >
                     <Link 
