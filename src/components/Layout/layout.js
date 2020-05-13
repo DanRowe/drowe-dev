@@ -26,7 +26,7 @@ const ContentContainer = styled.div`
   padding: 1rem;
   margin: auto;
   height: calc(100vh - 2.2rem);
-  // text-align: center;
+  text-align: center;
   // display: flex;
   // flex: 1;
   overflow-y: scroll;
