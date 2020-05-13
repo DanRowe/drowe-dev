@@ -13,7 +13,7 @@ const IndexPage = () => (
   <Layout page="Home">
     <SEO title="Home" />
     <Container fluid>
-      <Row xs="1" sm="1" md="2">
+      <Row xs="1" md="2">
         {/* FIXME do we really need 3 of the same element for varying size? */}
         <Col className="d-none d-md-block" style={{maxHeight: "91vh"}}><Headshot></Headshot></Col>
         <Col className="d-none d-sm-block d-md-none" style={{maxHeight: "60vh"}}><Headshot></Headshot></Col>
