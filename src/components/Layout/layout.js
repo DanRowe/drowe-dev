@@ -56,7 +56,7 @@ export default ({children, page}) => (
       <>
       <Container fluid>
         {/* Mobile navigation */}
-        <Container className="d-lg-none" style={{padding: 30}}>
+        <Container className="d-lg-none" style={{padding: "1.5rem"}}>
           <Navbar collapseOnSelect fixed="top" bg="light" expand="lg">
             <Link to="/"><Navbar.Brand>Drowe.dev</Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
