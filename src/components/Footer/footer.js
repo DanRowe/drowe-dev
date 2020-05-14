@@ -13,7 +13,7 @@ const ListLink = props => (
 export default () => (
     <Wrapper className="bg-primary">
         <ul style={{ textAlign: `center`, paddingTop: `.1em`, paddingBottom: `0`, marginBottom: `0`}}>
-            <IconContext.Provider value={{color: "light"}}>
+            <IconContext.Provider value={{color: "white"}}>
                 <ListLink href="mailto:daniel@drowe.dev">
                     <FaEnvelope size="1.7em"/>
                 </ListLink>
