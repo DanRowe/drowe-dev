@@ -16,6 +16,7 @@ import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar'
 import Row from 'react-bootstrap/Row'
 import Nav from 'react-bootstrap/Nav'
+import Fade from 'react-bootstrap/Fade'
 
 import { StaticQuery, graphql, Link } from "gatsby";
 import styled from 'styled-components'
@@ -91,7 +92,7 @@ export default ({children, page}) => (
             />
           </div>
           <Col className="p-0">
-            <ContentContainer>{children}</ContentContainer>
+            <Fade appear="true" in="true"><ContentContainer>{children}</ContentContainer></Fade>
           </Col>
           <div className="position-relative d-none d-lg-flex" style={{right: 0}}>
             <MyNav 
