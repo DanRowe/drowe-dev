@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"
-import { Wrapper, Flex } from "./styles"
+import { Wrapper } from "./styles"
 
 const ListLink = props => (
     <li style={{ display: `inline-block`, marginRight: `1rem`, marginBottom: `0px`}}>
