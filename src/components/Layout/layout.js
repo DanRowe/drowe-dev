@@ -8,7 +8,6 @@
 import React from "react"
 
 // import "./layout.css"
-import "./layout2.css"
 import Footer from "../Footer/footer"
 import MyNav from "../Nav/nav"
 
