@@ -9,6 +9,8 @@ import Card from "react-bootstrap/Card";
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Headshot from "../components/headshot"
+import { Button } from "react-bootstrap";
+import { Link } from "gatsby";
 
 const IndexPage = () => (
   <Layout page="Home">
@@ -22,21 +24,20 @@ const IndexPage = () => (
         {/* <Col style={{maxHeight: "auto"}}><Headshot></Headshot></Col> */}
         <Col className="d-flex align-items-center">
           <div>
-            <h1>Hi I&rsquo;m Daniel!</h1>
+            <h1>Hello, my name is Daniel Rowe.</h1>
             <Card
               bg="light"
               border="primary"
               body
               style={{textAlign: "left"}}
-            >
-                  This is where I will eventually write a nice paragraph of text 
-                  about myself. It will explain my intetests, why someone should 
-                  hire me, who I am, etc. This is a realistic amount of space 
-                  that the text blurb will take up. Before, my example was 
-                  far too long to be considered a realistic size. Now I can 
-                  properly style my page to match the amount of space that 
-                  this will take up.
+            > 
+              I’m an <strong>aspiring software engineer</strong> based in College Park, Maryland 
+              working on my bachelor’s in Computer Science. I create simple 
+              solutions to solve complex problems and love doing it. Check 
+              out my skills and experience on my <strong><Link to="/about">about page</Link></strong>. 
+              See what I’ve worked on and my current <strong><Link to="/projects">projects</Link></strong>.
             </Card>
+            <Link to="/contact"><Button className="mt-3">Get In Touch</Button></Link>
           </div>
         </Col>
       </Row>
