@@ -100,11 +100,13 @@ export default ({children, page}) => (
           <Col>
             <ContentContainer>{children}</ContentContainer>
           </Col>
+          {/* TODO if arr < 0 then xs = 1 */}
           <Col 
             xs={Math.round(data.site.siteMetadata.menuLinks.slice(
               data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,
             ).length/2)}
             className="p-0 d-none d-lg-block"
+            style={{minWidth: "48px"}}
           >
             <div className="position-absolute d-flex" style={{right: 0}}>
             <MyNav 
