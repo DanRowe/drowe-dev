@@ -23,7 +23,7 @@ import styled from 'styled-components'
 
 const ContentContainer = styled.div`
   max-width: 1300px;
-  padding: 1rem;
+  // padding: 1rem;
   margin: auto;
   height: calc(100vh - 2.2rem);
   text-align: center;
