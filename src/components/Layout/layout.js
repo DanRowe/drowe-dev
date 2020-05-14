@@ -8,6 +8,7 @@
 import React from "react"
 
 // import "./layout.css"
+import "./layout2.css"
 import Footer from "../Footer/footer"
 import MyNav from "../Nav/nav"
 
@@ -22,8 +23,9 @@ import styled from 'styled-components'
 
 
 const ContentContainer = styled.div`
+  background-color: #a5a7a940;
   max-width: 1300px;
-  // padding: 1rem;
+  padding: 1rem;
   margin: auto;
   height: calc(100vh - 2.2rem);
   text-align: center;
@@ -80,43 +82,26 @@ export default ({children, page}) => (
           </Navbar> 
         </Container>
         <Row>
-          <Col 
-            xs={Math.round(data.site.siteMetadata.menuLinks.slice(
-              0,
-              data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1
-            ).length/2)}
-            className="p-0 d-none d-lg-block"
-          >
-            <div className="position-absolute d-flex">
-              <MyNav 
-                page={
-                  data.site.siteMetadata.menuLinks.slice(
-                    0,
-                    data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1
-                  )}
-              />
-            </div>
-          </Col>
-          <Col>
+          <div className="position-relative d-none d-lg-flex">
+            <MyNav 
+              page={
+                data.site.siteMetadata.menuLinks.slice(
+                  0,
+                  data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1
+                )}
+            />
+          </div>
+          <Col className="p-0">
             <ContentContainer>{children}</ContentContainer>
           </Col>
-          {/* TODO if arr < 0 then xs = 1 */}
-          <Col 
-            xs={Math.round(data.site.siteMetadata.menuLinks.slice(
-              data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,
-            ).length/2)}
-            className="p-0 d-none d-lg-block"
-            style={{minWidth: "48px"}}
-          >
-            <div className="position-absolute d-flex" style={{right: 0}}>
+          <div className="position-relative d-none d-lg-flex" style={{right: 0}}>
             <MyNav 
               page={
                 data.site.siteMetadata.menuLinks.slice(
                   data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,
                 )}
               />
-            </div>
-          </Col>
+          </div>
         </Row>
       </Container>
         <div className="fixed-bottom d-none d-md-block">
