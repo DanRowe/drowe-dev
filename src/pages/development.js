@@ -8,7 +8,7 @@ const DevelopmentPage = () => (
     <Row className="h-100 align-items-center">
         <SEO title="Under Construction" />
         <Col className="m-auto">
-        <Jumbotron>
+        <Jumbotron style={{backgroundColor: "transparent"}}>
             <Row xs='1' sm='2' className="align-items-center" style={{textAlign: 'left'}}>
                 <Col className="m-auto">
                     <h1 className="d-none d-sm-block">Nice to meet you</h1>
