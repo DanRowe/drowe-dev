@@ -7,9 +7,9 @@ export default({ page }) => (
     {page.map(link => (
             <Link 
               to={link.link} 
-              style={{textDecoration: 'none', color: 'black'}}
+              style={{textDecoration: 'none'}}
               key={link.name}
-            ><NavColumn>{link.name}</NavColumn></Link>
+            ><NavColumn className="btn-outline-primary">{link.name}</NavColumn></Link>
     ))}
   </>
 )
