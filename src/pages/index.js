@@ -1,6 +1,6 @@
 import React from "react"
 // TODO customize bootstrap to match what was used --> https://getbootstrap.com/docs/4.3/getting-started/theming/
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

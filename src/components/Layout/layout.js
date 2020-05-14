@@ -7,7 +7,7 @@
 
 import React from "react"
 
-// import "./layout.css"
+import "./layout.css"
 import Footer from "../Footer/footer"
 import MyNav from "../Nav/nav"
 
@@ -20,6 +20,7 @@ import Fade from 'react-bootstrap/Fade'
 
 import { StaticQuery, graphql, Link } from "gatsby";
 import styled from 'styled-components'
+import Helmet from "react-helmet"
 
 
 const ContentContainer = styled.div`
@@ -54,6 +55,9 @@ export default ({children, page}) => (
     `}
     render={data => (
       <>
+      <Helmet>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+      </Helmet>
       <Container fluid>
         {/* Mobile navigation */}
         <Container className="d-lg-none" style={{padding: "1.5rem"}}>
