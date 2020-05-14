@@ -94,7 +94,7 @@ export default ({children, page}) => (
                 )}
             />
           </div>
-          <Col className="p-0" style={{backgroundColor: "#a5a7a940"}}>
+          <Col className="p-0 bg-light" style={{borderStyle: "none"}}>
             <Fade appear="true" in="true"><ContentContainer>{children}</ContentContainer></Fade>
           </Col>
           <div className="position-relative d-none d-lg-flex" style={{right: 0}}>
