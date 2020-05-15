@@ -10,12 +10,12 @@ export default({ page }) => (
         style={{textDecoration: 'none'}}
         key={link.name}
         activeClassName="active"
-        className="btn-outline-primary"
-        style={{
-          borderWidth: "1px !important", 
+        activeStyle={{
+          borderWidth: "1px", 
           borderRadius: "8px",
-          textDecoration: "none"
+          textDecoration: "none",
         }}
+        className="btn-outline-primary"
       ><NavColumn 
         // className="btn-outline-primary"
       >{link.name}</NavColumn></Link>
