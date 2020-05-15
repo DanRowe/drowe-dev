@@ -1,27 +1,37 @@
 import React from 'react'
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"
 import { IconContext } from "react-icons";
-import { Wrapper } from "./styles"
+import styled from 'styled-components'
+
+export const Wrapper = styled.div`
+  border-top: 1px solid  !important;
+  height: 2.2rem;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+`;
 
 const ListLink = props => (
     <li style={{ display: `inline-block`, marginRight: `1rem`, marginBottom: `0px`}}>
-        <a style={{ textDecoration: `none`, color: `inherit`, height: `2.2rem`}} href={props.href}>{props.children}</a>
+        <a style={{ textDecoration: `none`}} href={props.href}>{props.children}</a>
     </li>
 )
 
 
 export default () => (
-    <Wrapper className="bg-dark">
+    <Wrapper className="bg-primary">
+        {/* TODO top padding for icons  */}
         <ul style={{ textAlign: `center`, paddingTop: `.1em`, paddingBottom: `0`, marginBottom: `0`}}>
-            <IconContext.Provider value={{color: "white"}}>
+            <IconContext.Provider value={{color: "white", size: "1.7em"}}>
                 <ListLink href="mailto:daniel@drowe.dev">
-                    <FaEnvelope size="1.7em"/>
+                    <FaEnvelope/>
                 </ListLink>
                 <ListLink href="https://linkedin.com/in/danielrowe2">
-                    <FaLinkedinIn size="1.7em"/>
+                    <FaLinkedinIn/>
                 </ListLink>
                 <ListLink href="https://github.com/DanRowe1/">
-                    <FaGithub size="1.9em"/>
+                    <FaGithub/>
                 </ListLink>
             </IconContext.Provider>
         </ul>
