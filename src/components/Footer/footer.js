@@ -11,7 +11,7 @@ const ListLink = props => (
 
 
 export default () => (
-    <Wrapper className="bg-primary">
+    <Wrapper className="bg-dark">
         <ul style={{ textAlign: `center`, paddingTop: `.1em`, paddingBottom: `0`, marginBottom: `0`}}>
             <IconContext.Provider value={{color: "white"}}>
                 <ListLink href="mailto:daniel@drowe.dev">
