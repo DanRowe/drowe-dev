@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const NavColumn = styled.div `
-// FIXME nav columns don't display on Edge
 height: calc(100vh - 2.2rem);
 width: 2.6em;
 border: 1px solid gray;
