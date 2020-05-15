@@ -25,12 +25,21 @@ const IndexPage = () => (
         {/* <Col style={{maxHeight: "auto"}}><Headshot></Headshot></Col> */}
         <Col className="d-flex align-items-center pl-4">
           <div>
-            <h1>Hello, my name is Daniel Rowe.</h1>
+            <h1 className="pt-1 text-primary">
+              <small className="text-secondary">
+                Hello, my name is 
+              </small>
+              <br />
+              Daniel Rowe.
+            </h1>
             <Card
               bg="light"
               border="primary"
               body
-              style={{textAlign: "left"}}
+              style={{
+                textAlign: "left", 
+                borderRadius: "8px",
+              }}
             > 
               I’m an <strong>aspiring software engineer</strong> based in College Park, Maryland 
               working on my bachelor’s in Computer Science. I create simple 
