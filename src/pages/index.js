@@ -18,11 +18,7 @@ const IndexPage = () => (
     <Container fluid className="h-100">
       <Row xs="1" md="2" className="h-100 align-items-center">
         {/* TODO replace image with wire drawing */}
-        {/* FIXME do we really need 3 of the same element for varying size? */}
-        <Col className="d-none d-md-block" style={{maxHeight: "91vh"}}><Headshot></Headshot></Col>
-        <Col className="d-none d-sm-block d-md-none" style={{maxHeight: "60vh"}}><Headshot></Headshot></Col>
-        <Col className="d-sm-none" style={{maxHeight: "40vh"}}><Headshot></Headshot></Col>
-        {/* <Col style={{maxHeight: "auto"}}><Headshot></Headshot></Col> */}
+        <Col className="headshot-img"><Headshot></Headshot></Col>
         <Col className="d-flex align-items-center pl-4">
           <div>
             <h1 className="pt-1 text-primary">
