@@ -47,7 +47,11 @@ const IndexPage = () => (
               out my skills and experience on my <strong><Link to="/about">about page</Link></strong>. 
               See what I’ve worked on and my current <strong><Link to="/projects">projects</Link></strong>.
             </Card>
-            <Link to="/contact"><Button className="mt-3">Get In Touch</Button></Link>
+            <Link to="/contact">
+              <Button variant="secondary" block className="mt-3" style={{backgroundColor: "#ececec"}}>
+                Get In Touch
+              </Button>
+            </Link>
           </div>
         </Col>
       </Row>

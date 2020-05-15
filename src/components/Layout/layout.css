@@ -5,8 +5,21 @@ html {
 }
 body {
   background-color: #f1f1f1;
-  font-weight: 900 !important;
+  font-size: 20px !important;
+  /* font-weight: 900 !important; */
 }
 body::-webkit-scrollbar {
   display: none;
+}
+@media (max-width: 30em) {
+  body {
+    font-size: 18px;
+  }
+}
+b,
+strong {
+  font-weight: 900 !important;
+}
+h1 {
+  font-size: 2.5rem !important;
 }

@@ -23,7 +23,7 @@ export default () => (
     <Wrapper className="bg-primary">
         {/* TODO top padding for icons  */}
         <ul style={{ textAlign: `center`, paddingTop: `.1em`, paddingBottom: `0`, marginBottom: `0`}}>
-            <IconContext.Provider value={{color: "white", size: "1.7em"}}>
+            <IconContext.Provider value={{color: "white", size: "1.4em"}}>
                 <ListLink href="mailto:daniel@drowe.dev">
                     <FaEnvelope/>
                 </ListLink>
