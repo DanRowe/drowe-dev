@@ -92,6 +92,7 @@ export default ({children, page}) => (
                   0,
                   data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1
                 )}
+              location={page}
             />
           </div>
           <Col className="p-0 bg-light" style={{borderStyle: "none"}}>
@@ -103,6 +104,7 @@ export default ({children, page}) => (
                 data.site.siteMetadata.menuLinks.slice(
                   data.site.siteMetadata.menuLinks.map(e => e.name).indexOf(page)+1,
                 )}
+              location={page}
               />
           </div>
         </Row>

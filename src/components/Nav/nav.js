@@ -2,9 +2,9 @@ import React from "react"
 import { NavColumn } from './nav-column'
 import { Link } from "gatsby";
 
-const Navigation = ({ page }) => {
+const Navigation = ({ page, location }) => {
   const isActive = (link) => {
-    return location.pathname === link
+    return location === link
   }
 
   return (
@@ -17,7 +17,7 @@ const Navigation = ({ page }) => {
         >
           <NavColumn 
           // className="btn-outline-primary"
-          className={isActive(link.link) ? "btn-outline-primary active" : "btn-outline-primary"}
+          className={isActive(link.name) ? "btn-outline-primary active" : "btn-outline-primary"}
           >
             {link.name}
           </NavColumn>
