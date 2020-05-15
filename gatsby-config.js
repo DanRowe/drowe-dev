@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Daniel Rowe's Portfolio`,
+    title: `Daniel Rowe Software Engineer`,
+    siteUrl: `https://www.drowe.dev`,
     description: `Daniel Rowe's personal website to showcase his software engineering skills.`,
-    author: `@drowe`,
+    author: `@DanRowe1`,
     menuLinks:[
       {
         name: 'Home',
