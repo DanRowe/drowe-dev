@@ -61,7 +61,7 @@ export default ({children, page}) => (
       <Container fluid>
         {/* Mobile navigation */}
         <Container className="d-lg-none" style={{padding: "1.5rem"}}>
-          <Navbar collapseOnSelect fixed="top" bg="light" expand="lg">
+          <Navbar collapseOnSelect fixed="top" bg="primary" variant="dark" expand="lg">
             <Link to="/"><Navbar.Brand>Drowe.dev</Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -72,7 +72,7 @@ export default ({children, page}) => (
                   <Nav.Link >
                     <Link 
                       to={link.link} 
-                      style={{textDecoration: 'none', color: 'black'}}
+                      style={{textDecoration: 'none', color: 'white'}}
                       activeStyle={{fontWeight: "bold"}}
                       >
                       {link.name}
