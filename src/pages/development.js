@@ -17,7 +17,7 @@ const DevelopmentPage = () => (
                     <p>For now, take a look at my LinkedIn profile.</p>
                 </Col>
                 <Col>
-                    <a href="https://www.linkedin.com/in/danielrowe2/"><Button variant="primary">Daniel Rowe&rsquo;s LinkedIn Profile</Button></a>
+                    <Button variant="primary" href="https://www.linkedin.com/in/danielrowe2/">Daniel Rowe&rsquo;s LinkedIn Profile</Button>
                 </Col>
             </Row>
         </Jumbotron>
