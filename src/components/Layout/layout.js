@@ -27,7 +27,6 @@ const ContentContainer = styled.div`
   max-width: 1300px;
   padding: 1rem;
   margin: auto;
-  height: calc(100vh - 2.2rem);
   text-align: center;
   // display: flex;
   // flex: 1;
@@ -36,6 +35,13 @@ const ContentContainer = styled.div`
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+  @media (min-width: 768px) {
+    height: calc(100vh - 2.2rem);
+  }
+  @media (max-width: 768px) {
+    max-height: 100vh;
+    margin-top: 84.75px;
   }
 `
 
@@ -59,9 +65,8 @@ export default ({children, page}) => (
         <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-oOs/gFavzADqv3i5nCM+9CzXe3e5vXLXZ5LZ7PplpsWpTCufB7kqkTlC9FtZ5nJo" crossorigin="anonymous"></link>  
       </Helmet>
       <Container fluid>
-        {/* Mobile navigation */}
-        <Container className="d-lg-none" style={{padding: "1.5rem"}}>
-          <Navbar collapseOnSelect fixed="top" bg="primary" variant="dark" expand="lg">
+          {/* Mobile navigation */}
+          <Navbar collapseOnSelect fixed="top" bg="primary" variant="dark" expand="lg" className="d-lg-none">
             <Link to="/"><Navbar.Brand>Drowe.dev</Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -83,8 +88,7 @@ export default ({children, page}) => (
               </Nav>
             </Navbar.Collapse>
           </Navbar> 
-        </Container>
-        <Row>
+          <Row>
           <div className="position-relative d-none d-lg-flex">
             <MyNav 
               page={

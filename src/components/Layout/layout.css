@@ -37,6 +37,7 @@ strong {
 @media (min-width: 576px) {
   .headshot-img {
     max-height: 60vh;
+    overflow: hidden;
   }
 }
 
