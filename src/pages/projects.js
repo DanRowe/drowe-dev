@@ -8,6 +8,7 @@ import Development from "./development"
 const ProjectsPage = () => (
   <Layout page="Projects">
     <SEO title="Projects" />
+    {/* IDEA use cards to display projects and import last updated */}
     <Development />
   </Layout>
 )
