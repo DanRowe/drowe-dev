@@ -15,6 +15,7 @@ import { Link } from "gatsby";
 const IndexPage = () => (
   <Layout page="Home">
     <SEO title="Home" />
+    {/* FIXME content overflow on mobile */}
     <Container fluid className="h-100">
       <Row xs="1" md="2" className="h-100 align-items-center">
         {/* TODO replace image with wire drawing */}
@@ -44,7 +45,7 @@ const IndexPage = () => (
               See what I’ve worked on and my current <strong><Link to="/projects">projects</Link></strong>.
             </Card>
             <Link to="/contact">
-              <Button variant="secondary" block className="mt-3" style={{backgroundColor: "#ececec"}}>
+              <Button variant="secondary" block className="mt-3 border-primary border" style={{backgroundColor: "#ececec"}}>
                 Get In Touch
               </Button>
             </Link>
