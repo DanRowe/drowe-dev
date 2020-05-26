@@ -11,18 +11,14 @@ const fs = require("fs")
 
 exports.onPreInit = () => {
   if (process.argv[2] === "build") {
-    fs.rmdirSync(path.join(__dirname, "drowe-dev-live"), { recursive: true })
     fs.renameSync(
-      path.join(__dirname, "public"),
-      path.join(__dirname, "public_dev")
+      path.join(__dirname, "drowe-dev-live/.git"),
+      path.join(__dirname, "public/.git")
     )
+    fs.rmdirSync(path.join(__dirname, "drowe-dev-live"), { recursive: true })
   }
 }
 
 exports.onPostBuild = () => {
   fs.renameSync(path.join(__dirname, "public"), path.join(__dirname, "drowe-dev-live"))
-  fs.renameSync(
-    path.join(__dirname, "public_dev"),
-    path.join(__dirname, "public")
-  )
 }
