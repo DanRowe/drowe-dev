@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "drowe-dev",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Daniel Rowe's Portfolio built with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Daniel Rowe <daniel@drowe.dev>",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.22.9",
