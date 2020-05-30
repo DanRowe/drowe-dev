@@ -1,0 +1,8 @@
+{
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules",
+    "**/drowe-dev-live",
+    "**/.cache"
+  ],
+  "todo-tree.filtering.ignoreGitSubmodules": true
+}
