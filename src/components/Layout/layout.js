@@ -22,7 +22,6 @@ import { StaticQuery, graphql, Link } from "gatsby";
 import styled from 'styled-components'
 import Helmet from "react-helmet"
 
-
 const ContentContainer = styled.div`
   max-width: 1300px;
   padding: 1rem;
@@ -36,12 +35,14 @@ const ContentContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     height: calc(100vh - 2.2rem);
+  }
+  @media (max-width: 992px) {
+    margin-top: 84.75px;
   }
   @media (max-width: 768px) {
     max-height: 100vh;
-    margin-top: 84.75px;
   }
 `
 

@@ -15,7 +15,6 @@ import { Link } from "gatsby";
 const IndexPage = () => (
   <Layout page="Home">
     <SEO title="Home" />
-    {/* FIXME content overflow on mobile */}
     <Container fluid className="h-100">
       <Row xs="1" md="2" className="h-100 align-items-center">
         {/* TODO replace image with wire drawing */}
