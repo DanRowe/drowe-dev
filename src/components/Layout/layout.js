@@ -22,8 +22,6 @@ import { StaticQuery, graphql, Link } from "gatsby";
 import styled from 'styled-components'
 import Helmet from "react-helmet"
 
-//BUG scrolling hiccup on mobile with overflow content
-
 const ContentContainer = styled.div`
   max-width: 1300px;
   padding: 1rem;
