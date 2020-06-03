@@ -36,27 +36,27 @@ const AboutPage = () => {
       <Container fluid className="h-100">
         {/* TODO center everything */}
         {/* TODO left and top padding on >= md */}
-        {/* FIXME no respect for mobile navbar in lg */}
-        <Row xs="1" lg="2" className="h-100 m-auto">
+        {/* TODO horizontal alignment for fixed sidebar */}
+        <Row xs="1" md="2" className="h-100 m-auto">
           <Col md="2" className="pt-md-4">
             <div className="sidebar">
-            <Img 
-              fluid={data.portrait.childImageSharp.fluid} 
-              title="Daniel Rowe" 
-              style={{
-                "border-radius": "50%",
-                "maxWidth": "200px",
-                "margin": "auto"
-              }}
-              />
-            <br />
-            <h3><Link to="/about">Resume</Link></h3>
-            <h3>Skills</h3>
-            <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
-              <li>Skills are</li>
-              <li>imported</li>
-              <li>from API</li>
-            </ul>
+              <Img 
+                fluid={data.portrait.childImageSharp.fluid} 
+                title="Daniel Rowe" 
+                style={{
+                  "border-radius": "50%",
+                  "maxWidth": "200px",
+                  "margin": "auto"
+                }}
+                />
+              <br />
+              <h3><Link to="/about">Resume</Link></h3>
+              <h3>Skills</h3>
+              <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
+                <li>Skills are</li>
+                <li>imported</li>
+                <li>from API</li>
+              </ul>
             </div>
           </Col>
           <Col md="9" className="m-auto pt-md-4">

@@ -41,9 +41,6 @@ strong {
     max-height: 60vh;
     overflow: hidden;
   }
-  .sidebar {
-    position: fixed;
-  }
 }
 
 @media (min-width: 768px) {
