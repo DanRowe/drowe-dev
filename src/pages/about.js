@@ -50,10 +50,19 @@ const AboutPage = () => {
           <Col md="8">
             <h2>Work experience</h2>
             <h3>Most Recent Job</h3>
+            <small className="text-muted">Start Date - End Date</small>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in turpis et dolor rhoncus viverra. Suspendisse justo orci, molestie a sem ac, tristique sollicitudin risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vehicula nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tortor a diam fringilla euismod eget volutpat ex. Cras vitae est aliquam, molestie orci sit amet, tincidunt enim. Quisque sed ante nec risus pulvinar mollis vitae non felis. </p>
             <h3>Kinda Recent Job</h3>
+            <small className="text-muted">Start Date - End Date</small>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in turpis et dolor rhoncus viverra. Suspendisse justo orci, molestie a sem ac, tristique sollicitudin risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vehicula nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tortor a diam fringilla euismod eget volutpat ex. Cras vitae est aliquam, molestie orci sit amet, tincidunt enim. Quisque sed ante nec risus pulvinar mollis vitae non felis. </p>
             <h3>Not Recent Job</h3>
+            <small className="text-muted">Start Date - End Date</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in turpis et dolor rhoncus viverra. Suspendisse justo orci, molestie a sem ac, tristique sollicitudin risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vehicula nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tortor a diam fringilla euismod eget volutpat ex. Cras vitae est aliquam, molestie orci sit amet, tincidunt enim. Quisque sed ante nec risus pulvinar mollis vitae non felis. </p>
+            <h3>Overflow Job 1</h3>
+            <small className="text-muted">Start Date - End Date</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in turpis et dolor rhoncus viverra. Suspendisse justo orci, molestie a sem ac, tristique sollicitudin risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vehicula nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tortor a diam fringilla euismod eget volutpat ex. Cras vitae est aliquam, molestie orci sit amet, tincidunt enim. Quisque sed ante nec risus pulvinar mollis vitae non felis. </p>
+            <h3>Overflow Job 2</h3>
+            <small className="text-muted">Start Date - End Date</small>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in turpis et dolor rhoncus viverra. Suspendisse justo orci, molestie a sem ac, tristique sollicitudin risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vehicula nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tortor a diam fringilla euismod eget volutpat ex. Cras vitae est aliquam, molestie orci sit amet, tincidunt enim. Quisque sed ante nec risus pulvinar mollis vitae non felis. </p>
           </Col>
         </Row>
