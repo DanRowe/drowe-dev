@@ -27,8 +27,12 @@ const AboutPage = () => {
     <Layout page="About">
       <SEO title="About" />
       <Container fluid className="h-100">
-        <Row xs="1" md="2" className="h-100">
-          <Col md="4">
+        {/* TODO center everything */}
+        {/* TODO left and top padding on >= md */}
+        {/* FIXME no respect for mobile navbar in lg */}
+        <Row xs="1" md="2" className="h-100 m-auto">
+          <Col md="2" className="pt-md-4">
+            <div className="sidebar">
             <Img 
               fluid={data.portrait.childImageSharp.fluid} 
               title="Daniel Rowe" 
@@ -37,18 +41,19 @@ const AboutPage = () => {
                 "maxWidth": "200px",
                 "margin": "auto"
               }}
-            />
+              />
             <br />
             <h3><Link to="/about">Resume</Link></h3>
             <h3>Skills</h3>
-            <ul>
+            <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
               <li>Skills are</li>
               <li>imported</li>
               <li>from API</li>
             </ul>
+            </div>
           </Col>
-          <Col md="8">
-            <h2>Work experience</h2>
+          <Col md="9" className="m-auto pt-md-4">
+            <h1 className="pb-3">Work experience</h1>
             <h3>Most Recent Job</h3>
             <small className="text-muted">Start Date - End Date</small>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in turpis et dolor rhoncus viverra. Suspendisse justo orci, molestie a sem ac, tristique sollicitudin risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vehicula nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tortor a diam fringilla euismod eget volutpat ex. Cras vitae est aliquam, molestie orci sit amet, tincidunt enim. Quisque sed ante nec risus pulvinar mollis vitae non felis. </p>
