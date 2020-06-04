@@ -46,7 +46,8 @@ const ContentContainer = styled.div`
   }
   @media (min-width: 768px) {
     .sidebar {
-      position: fixed;
+      position: sticky;
+      top: 24px;
     }
   }
 `
