@@ -10,6 +10,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 const Job = styled.div`
+  @media (min-width: 768px) {
+    padding-right: 3em;
+    padding-left: 3em;
+  }
   p {
     padding-bottom: 2em;
   }
@@ -34,12 +38,11 @@ const AboutPage = () => {
     <Layout page="About">
       <SEO title="About" />
       <Container fluid className="h-100">
-        {/* TODO center everything */}
-        {/* TODO left and top padding on >= md */}
-        {/* TODO horizontal alignment for fixed sidebar */}
+        {/* TODO mobile view look better */}
+        {/* FIXME sizing of sidebar */}
         <Row xs="1" md="2" className="h-100 m-auto">
           <Col md="2" className="pt-md-4">
-            <div className="sidebar">
+            <div className="sidebar mb-3">
               <Img 
                 fluid={data.portrait.childImageSharp.fluid} 
                 title="Daniel Rowe" 
@@ -59,7 +62,7 @@ const AboutPage = () => {
               </ul>
             </div>
           </Col>
-          <Col md="9" className="m-auto pt-md-4">
+          <Col md="10" className="m-auto pt-md-4">
             <h1 className="mb-4">Work experience</h1>
             <Job>
               <h3>Most Recent Job</h3>
