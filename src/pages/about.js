@@ -15,6 +15,20 @@ const Sidebar = styled.div`
     top: 24px;
   }
   margin-bottom: 1rem;
+  h3 {
+    padding-top: 1.5rem;
+    // text-decoration: underline;
+  }
+  a:hover {
+    // primary #1a1a1a
+    // secondary #919aa1
+    text-decoration-color: #919aa1;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 `
 
 const Job = styled.div`
@@ -52,6 +66,7 @@ const AboutPage = () => {
         <Row xs="1" md="2" className="h-100 m-auto">
           <Col md="2" className="pt-md-4">
             <Sidebar>
+              <div>
               <Img 
                 fluid={data.portrait.childImageSharp.fluid} 
                 title="Daniel Rowe" 
@@ -60,12 +75,11 @@ const AboutPage = () => {
                   "maxWidth": "200px",
                   "margin": "auto"
                 }}
-              />
-              {/* <br /> */}
+                />
+              </div>
               <h3><Link to="/about">Resume</Link></h3>
-              {/* <br /> */}
               <h3>Skills</h3>
-              <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
+              <ul>
                 <li>Skills are</li>
                 <li>imported</li>
                 <li>from API</li>
