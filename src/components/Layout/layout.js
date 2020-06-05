@@ -44,12 +44,6 @@ const ContentContainer = styled.div`
   @media (max-width: 768px) {
     max-height: 100vh;
   }
-  @media (min-width: 768px) {
-    .sidebar {
-      position: sticky;
-      top: 24px;
-    }
-  }
 `
 
 export default ({children, page}) => (

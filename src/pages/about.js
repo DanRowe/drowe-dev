@@ -9,14 +9,20 @@ import Container from 'react-bootstrap/Container'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+const Sidebar = styled.div`
+  @media (min-width: 768px) {
+    position: sticky;
+    top: 24px;
+  }
+  margin-bottom: 1rem;
+`
+
 const Job = styled.div`
   @media (min-width: 768px) {
     padding-right: 3em;
     padding-left: 3em;
   }
-  p {
-    padding-bottom: 2em;
-  }
+  margin-top: 2em;
 `
 
 // FIXME replace with real portrait image
@@ -38,11 +44,14 @@ const AboutPage = () => {
     <Layout page="About">
       <SEO title="About" />
       <Container fluid className="h-100">
+        {/* IDEA a small scrollbar for work experience */}
+        {/* add overflow-y: scroll to row and then style it 
+        and make it be closer to the nav */}
         {/* TODO mobile view look better */}
         {/* FIXME sizing of sidebar */}
         <Row xs="1" md="2" className="h-100 m-auto">
           <Col md="2" className="pt-md-4">
-            <div className="sidebar mb-3">
+            <Sidebar>
               <Img 
                 fluid={data.portrait.childImageSharp.fluid} 
                 title="Daniel Rowe" 
@@ -51,19 +60,20 @@ const AboutPage = () => {
                   "maxWidth": "200px",
                   "margin": "auto"
                 }}
-                />
-              <br />
+              />
+              {/* <br /> */}
               <h3><Link to="/about">Resume</Link></h3>
+              {/* <br /> */}
               <h3>Skills</h3>
               <ul style={{listStyleType: "none", padding: 0, margin: 0}}>
                 <li>Skills are</li>
                 <li>imported</li>
                 <li>from API</li>
               </ul>
-            </div>
+            </Sidebar>
           </Col>
           <Col md="10" className="m-auto pt-md-4">
-            <h1 className="mb-4">Work experience</h1>
+            <h1 className="mb-3">Work experience</h1>
             <Job>
               <h3>Most Recent Job</h3>
               <small className="text-muted">Start Date - End Date</small>
