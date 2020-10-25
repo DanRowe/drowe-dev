@@ -1,15 +1,10 @@
-# Daniel Rowe's Portfolio
+# Daniel Rowe's Developer Portfolio
 
 Hi my name is Daniel, a full stack web developer, data science beginner, and a Computer Science Major at the University of Maryland. This is my portfolio! 
 
+Major improvements to come soon.
 
-## How to View
-
-1) Clone this repo to your local machine.
-2) Cd into the root directory of the project
-3) Type the command "npm install" 
-4) Cd into the src folder of the project.
-5) Type the command "npm start" 
+This website is in its very early stages but will have a blog up and running once the inital pages have been constructed.
 
 
 ## View Portfolio Here
@@ -29,7 +24,10 @@ Hi my name is Daniel, a full stack web developer, data science beginner, and a C
 * Bootstrap
 
 
+## Contributing
+
+Please open an issue first to discuss what you would like to change.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
