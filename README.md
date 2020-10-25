@@ -16,7 +16,7 @@ Hi my name is Daniel, a full stack web developer, data science beginner, and a C
 
 * https://drowe.dev/
 
-(insert screenshots here maybe)
+![Daniel Rowe Portfolio](./portfolio.png)
 
 
 ## Built with
