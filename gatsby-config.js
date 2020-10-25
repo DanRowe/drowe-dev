@@ -68,9 +68,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
-        trackingId: "UA-166756795-1",
+        trackingId: `UA-166756795-1`,
+        head: true,
+        anonymize: false,
       },
     },
     // TODO gatsby offline

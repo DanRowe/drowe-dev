@@ -4,5 +4,6 @@
     "**/drowe-dev-live",
     "**/.cache"
   ],
-  "todo-tree.filtering.ignoreGitSubmodules": true
+  "todo-tree.filtering.ignoreGitSubmodules": true,
+  "search.useGlobalIgnoreFiles": true
 }

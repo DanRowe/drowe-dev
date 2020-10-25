@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa"
 import { IconContext } from "react-icons";
+import { OutboundLink } from "gatsby-plugin-gtag"
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
@@ -13,9 +14,17 @@ export const Wrapper = styled.div`
 `;
 
 const ListLink = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem`, marginBottom: `0px`}}>
-        <a style={{ textDecoration: `none`}} href={props.href}>{props.children}</a>
-    </li>
+  <li
+    style={{
+      display: `inline-block`,
+      marginRight: `1rem`,
+      marginBottom: `0px`,
+    }}
+  >
+    <OutboundLink style={{ textDecoration: `none` }} href={props.href}>
+      {props.children}
+    </OutboundLink>
+  </li>
 )
 
 
