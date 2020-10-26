@@ -4,24 +4,24 @@ module.exports = {
     siteUrl: `https://www.drowe.dev`,
     description: `Daniel Joseph Rowe Software Engineer`,
     author: `Daniel Rowe`,
-    menuLinks:[
+    menuLinks: [
       {
-        name: 'Home',
-        link: '/'
+        name: "Home",
+        link: "/",
       },
       {
-        name: 'About',
-        link: '/about'
+        name: "About",
+        link: "/about",
       },
       {
-        name: 'Projects',
-        link: '/projects'
+        name: "Projects",
+        link: "/projects",
       },
       {
-        name: 'Contact',
-        link: '/contact'
+        name: "Contact",
+        link: "/contact",
       },
-    ]
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,25 +35,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-favicon`,
-      //TODO update favicon image favicon.io
-      options: {
-        logo: `./static/favicon/favicon-512.png`,
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false,
-        },
-      }
-    },
     {
       //TODO change metadata
       resolve: `gatsby-plugin-manifest`,
