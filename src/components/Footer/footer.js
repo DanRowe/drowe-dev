@@ -29,20 +29,27 @@ const ListLink = props => (
 
 
 export default () => (
-    <Wrapper className="bg-primary">
-        {/* TODO top padding for icons  */}
-        <ul style={{ textAlign: `center`, paddingTop: `.1em`, paddingBottom: `0`, marginBottom: `0`}}>
-            <IconContext.Provider value={{color: "white", size: "1.4em"}}>
-                <ListLink href="mailto:daniel@drowe.dev">
-                    <FaEnvelope/>
-                </ListLink>
-                <ListLink href="https://linkedin.com/in/danielrowe2">
-                    <FaLinkedinIn/>
-                </ListLink>
-                <ListLink href="https://github.com/DanRowe1/">
-                    <FaGithub/>
-                </ListLink>
-            </IconContext.Provider>
-        </ul>
-    </Wrapper>
+  <Wrapper className="bg-primary">
+    {/* TODO top padding for icons  */}
+    <ul
+      style={{
+        textAlign: `center`,
+        paddingTop: `.1em`,
+        paddingBottom: `0`,
+        marginBottom: `0`,
+      }}
+    >
+      <IconContext.Provider value={{ color: "white", size: "1.4em" }}>
+        <ListLink href="mailto:daniel@drowe.dev">
+          <FaEnvelope />
+        </ListLink>
+        <ListLink href="https://linkedin.com/in/danielrowe2">
+          <FaLinkedinIn />
+        </ListLink>
+        <ListLink href="https://github.com/DanRowe/">
+          <FaGithub />
+        </ListLink>
+      </IconContext.Provider>
+    </ul>
+  </Wrapper>
 )
