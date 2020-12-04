@@ -26,7 +26,7 @@ const DevelopmentPage = () => (
             <Button
               as={OutboundLink}
               variant="primary"
-              href="https://www.linkedin.com/in/danielrowe2/"
+              href="https://www.linkedin.com/in/danjrowe/"
             >
               Daniel Rowe&rsquo;s LinkedIn Profile
             </Button>
